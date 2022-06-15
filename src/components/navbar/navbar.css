@@ -3,11 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;
-
-    background: #f4f5f5;
-
-    border-bottom: 2px solid black;
-
 }
 
 .__navbar-links{
@@ -15,7 +10,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 
 .__navbaar-links_logo{
@@ -26,3 +21,46 @@
     width: 62px;
     height: 56px;
 }
+
+.__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.__navbar-links_container p,
+.__navbar-sign p{
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:25px ;
+    text-transform:capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.__navbar-links_container a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.__navbar-sign button,
+.__navbar-sign_menu button{
+    padding: 0.5rem 1rem;
+    background: #f8f6f7;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height:25px ;
+    text-transform: capitalize;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
