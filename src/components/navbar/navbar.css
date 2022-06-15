@@ -1,0 +1,28 @@
+.__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    background: #f4f5f5;
+
+    border-bottom: 2px solid black;
+
+}
+
+.__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ffffff;
+}
+
+.__navbaar-links_logo{
+    margin-right:2rem ;
+}
+
+.__navbaar-links_logo img{
+    width: 62px;
+    height: 56px;
+}
