@@ -1,4 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+body{
+  background: #f4f5f5;;
+  /* background: var(--color-bg); */
+  /* font-family: 'Tangerine', serif;
+  font-size: 48px; */
+}
+
+.section__padding{
+  padding: 4rem 6rem;
+}
+
+.section__margin{
+  margin: 4rem 6rem;
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  .section__padding{
+    padding: 4rem 6rem;
+  }
+
+  .section__margin{
+    margin: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 550px){
+
+  .section__padding{
+    padding: 4rem 2rem;
+  }
+
+  .section__margin{
+    margin: 4rem 2rem;
+  }
+  
+}
 
 
 /* .App {
