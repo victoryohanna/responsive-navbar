@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;
+    box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
 }
 
 .__navbar-links{
@@ -34,7 +37,8 @@
 }
 
 .__navbar-links_container p,
-.__navbar-sign p{
+.__navbar-sign p,
+.__navbar-menu_container p{
     color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
@@ -45,15 +49,16 @@
     cursor: pointer;
 }
 
-.__navbar-links_container a{
+.__navbar-links_container a,
+.__navbar-menu_container a{
     text-decoration: none;
     color: #000000;
 }
 
 .__navbar-sign button,
-.__navbar-sign_menu button{
+.__navbar-menu_container button{
     padding: 0.5rem 1rem;
-    background: #f8f6f7;
+    background: #5f5e5e;
     border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
@@ -62,5 +67,86 @@
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+.__navbar-menu{
+    position: relative;
+    margin-left: 1rem;
+    display: none;
+}
+
+.__navbar-menu svg{
+    cursor: pointer;
+}
+
+.__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: #f8f6f7;
+    padding: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    
+
+    box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 9px -7px rgba(0,0,0,0.75);
+}
+
+.__navbar-menu_container p{
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width: 1050px){
+    .__navbar-links_container{
+        display: none;
+    }
+
+    .__navbar-menu{
+        display: flex;
+    }
+
+    .__navbar-menu_container{
+        top: 20px;
+        
+    }
+
+    .__navbar-sign{
+        display: none;
+    }
+
+    .__navbar-menu_container-links-sign{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .__navbar{
+        padding: 2rem 4rem;
+    }
+
+    .__navbar-menu_container{
+        top: 20px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .__navbar{
+        padding: 2rem ;
+        border-bottom: none;
+    }
+
+   
+
 }
 
